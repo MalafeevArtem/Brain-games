@@ -18,5 +18,11 @@
     "url": "https://github.com/MalafeevArtem/backend-project-lvl1/issues"
   },
   "homepage": "https://github.com/MalafeevArtem/backend-project-lvl1#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2"
+  }
 }
