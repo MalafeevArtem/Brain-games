@@ -11,6 +11,7 @@
   <h2>Examples</h2>
   <ol>
   <li><a href="https://asciinema.org/a/kLthmotz3I91hB9nIdzkcHUNl" target="_blank">Brain Even asciinema</a></li>
+  <li><a href="https://asciinema.org/a/shfCiqH03BPviTeJBitQQPjZT" target="_blank">Brain Calc asciinema</a></li>
   </ol>
 </div>
 
