@@ -18,7 +18,6 @@ export default (regulations, gameData) => {
 
     if (DATA[0] === DATA[1]) {
       console.log('Correct!');
-      console.log(count);
       iteration(count - 1);
     } else {
       console.log(`'${DATA[1]}' is wrong answer ;(. Correct answer was '${DATA[0]}')`);
@@ -28,5 +27,3 @@ export default (regulations, gameData) => {
 
   iteration(COUNT);
 };
-
-
