@@ -12,6 +12,7 @@
   <ol>
   <li><a href="https://asciinema.org/a/kLthmotz3I91hB9nIdzkcHUNl" target="_blank">Brain Even asciinema</a></li>
   <li><a href="https://asciinema.org/a/shfCiqH03BPviTeJBitQQPjZT" target="_blank">Brain Calc asciinema</a></li>
+  <li><a href="https://asciinema.org/a/J5To3VNlDwHPVTv7mJwoiR4Nc" target="_blank">Brain GCD asciinema</a></li>
   </ol>
 </div>
 
