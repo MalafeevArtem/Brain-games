@@ -13,6 +13,7 @@
   <li><a href="https://asciinema.org/a/shfCiqH03BPviTeJBitQQPjZT" target="_blank">Brain Calc asciinema</a></li>
   <li><a href="https://asciinema.org/a/J5To3VNlDwHPVTv7mJwoiR4Nc" target="_blank">Brain GCD asciinema</a></li>
   <li><a href="https://asciinema.org/a/xzsb6m6zRFnipRRgyRg2cbKoV" target="_blank">Brain Progression asciinema</a></li>
+  <li><a href="https://asciinema.org/a/Psaah0Hc5OEwLCEp2r0RLGJXY" target="_blank">Brain Prime asciinema</a></li>
   </ol>
 </div>
 
