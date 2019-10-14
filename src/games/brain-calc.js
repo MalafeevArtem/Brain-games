@@ -3,11 +3,9 @@ import randomNumber from '../randomNumber';
 import play from '..';
 
 const REGULATIONS = 'What is the result of the expression?';
-const MIN = 0;
-const MAX = 100;
 
 const randomOperation = () => {
-  const number = randomNumber(MIN, MAX - 97);
+  const number = randomNumber(0, 3);
   if (number === 0) {
     return '+';
   }
@@ -28,8 +26,8 @@ const valueСalculation = (operand1, operand2, operation) => {
 };
 
 const gameData = () => {
-  const operand1 = randomNumber(MIN, MAX);
-  const operand2 = randomNumber(MIN, MAX);
+  const operand1 = randomNumber(0, 100);
+  const operand2 = randomNumber(0, 100);
   const operation = randomOperation();
   const trueAnswer = valueСalculation(operand1, operand2, operation);
   console.log(`Question: ${operand1} ${operation} ${operand2}`);
