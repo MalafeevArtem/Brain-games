@@ -13,9 +13,9 @@ const gameData = () => {
   console.log(`Question: ${number}`);
   const askAnswerUser = readlineSync.question('Your answer: ');
 
-  const DATA = [trueAnswer, askAnswerUser];
+  const data = [trueAnswer, askAnswerUser];
 
-  return DATA;
+  return data;
 };
 
 export default () => play(REGULATIONS, gameData);

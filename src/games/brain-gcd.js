@@ -20,9 +20,9 @@ const gameData = () => {
   console.log(`Question: ${operand1} ${operand2}`);
   const trueAnswer = gcd(operand1, operand2);
   const askAnswerUser = Number(readlineSync.question('Your answer: '));
-  const DATA = [trueAnswer, askAnswerUser];
+  const data = [trueAnswer, askAnswerUser];
 
-  return DATA;
+  return data;
 };
 
 export default () => play(REGULATIONS, gameData);

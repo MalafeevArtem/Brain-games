@@ -8,7 +8,7 @@ export default (regulations, gameData) => {
   const COUNT = 2;
 
   const iteration = (count) => {
-    const DATA = gameData();
+    const data = gameData();
 
     if (count === 0) {
       console.log('Correct!');
@@ -16,11 +16,11 @@ export default (regulations, gameData) => {
       return;
     }
 
-    if (DATA[0] === DATA[1]) {
+    if (data[0] === data[1]) {
       console.log('Correct!');
       iteration(count - 1);
     } else {
-      console.log(`'${DATA[1]}' is wrong answer ;(. Correct answer was '${DATA[0]}')`);
+      console.log(`'${data[1]}' is wrong answer ;(. Correct answer was '${data[0]}')`);
       console.log(`Let's try again, ${askName}`);
     }
   };
