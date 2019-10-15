@@ -6,6 +6,7 @@
  src="https://travis-ci.org/MalafeevArtem/Brain-games.svg?branch=master" /></a>                        
 </div>
 
+
 <div>
   <h2>Examples</h2>
   <ol>
