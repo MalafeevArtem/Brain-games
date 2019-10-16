@@ -39,10 +39,9 @@ const gameData = () => {
   const start = randomNumber(2, 11);
   const progressions = createProgression(start, step);
   const trueAnswer = progressions[pass];
-  const question = createQuestion(progressions, pass);
-  console.log(`Question: ${question}`);
-  const askAnswerUser = Number(readlineSync.question('Your answer: '));
-  const data = [trueAnswer, askAnswerUser];
+  const skippingProgression = createQuestion(progressions, pass);
+  const question = `${skippingProgression}`;
+  const data = [String(trueAnswer), question];
 
   return data;
 };

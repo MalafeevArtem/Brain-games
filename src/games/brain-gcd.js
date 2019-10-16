@@ -15,10 +15,9 @@ const gameData = () => {
 
   const operand1 = randomNumber(0, 100);
   const operand2 = randomNumber(0, 100);
-  console.log(`Question: ${operand1} ${operand2}`);
+  const question = `${operand1} ${operand2}`;
   const trueAnswer = gcd(operand1, operand2);
-  const askAnswerUser = Number(readlineSync.question('Your answer: '));
-  const data = [trueAnswer, askAnswerUser];
+  const data = [String(trueAnswer), question];
 
   return data;
 };

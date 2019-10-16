@@ -30,9 +30,8 @@ const gameData = () => {
   const operand2 = randomNumber(0, 100);
   const operation = randomOperation();
   const trueAnswer = valueСalculation(operand1, operand2, operation);
-  console.log(`Question: ${operand1} ${operation} ${operand2}`);
-  const askAnswerUser = Number(readlineSync.question('Your answer: '));
-  const data = [trueAnswer, askAnswerUser];
+  const question = `${operand1} ${operation} ${operand2}`;
+  const data = [String(trueAnswer), question];
 
   return data;
 };

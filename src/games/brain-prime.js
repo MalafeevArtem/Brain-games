@@ -15,9 +15,8 @@ const gameData = () => {
   const operand = randomNumber(1, 100);
   const prime = isPrime(operand);
   const trueAnswer = (prime === true) ? 'yes' : 'no';
-  console.log(`Question ${operand}`);
-  const askAnswerUser = readlineSync.question('Your answer: ');
-  const data = [trueAnswer, askAnswerUser];
+  const question = `${operand}`;
+  const data = [trueAnswer, question];
 
   return data;
 };
