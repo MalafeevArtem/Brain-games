@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import randomNumber from '../randomNumber';
 import play from '..';
 

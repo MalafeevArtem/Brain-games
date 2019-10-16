@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import randomNumber from '../randomNumber';
 import play from '..';
 
@@ -6,11 +5,11 @@ const REGULATIONS = 'What number is missing in the progression?';
 const PROGRS_LENGTH = 10;
 
 const createProgression = (start, step) => {
-  const prog = [];
+  const progression = [];
 
   const iteration = (count) => {
     if (count === PROGRS_LENGTH) {
-      return prog;
+      return progression;
     }
     prog.push(start + step * count);
     return iteration(count + 1);
