@@ -1,7 +1,7 @@
 import randomNumber from '../randomNumber';
 import play from '..';
 
-const REGULATION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const regulations = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (operand) => {
   for (let index = 2; index < operand; index += 1) {
@@ -20,4 +20,4 @@ const gameData = () => {
   return data;
 };
 
-export default () => play(REGULATION, gameData);
+export default () => play(regulations, gameData);

@@ -1,14 +1,14 @@
 import randomNumber from '../randomNumber';
 import play from '..';
 
-const REGULATIONS = 'What number is missing in the progression?';
-const PROGRS_LENGTH = 10;
+const regulations = 'What number is missing in the progression?';
+const progressionLength = 10;
 
 const createProgression = (start, step) => {
   const progression = [];
 
   const iteration = (count) => {
-    if (count === PROGRS_LENGTH) {
+    if (count === progressionLength) {
       return progression;
     }
     prog.push(start + step * count);
@@ -21,7 +21,7 @@ const createProgression = (start, step) => {
 const createQuestion = (progressions, pass) => {
   let question = '';
 
-  for (let index = 0; index < PROGRS_LENGTH; index += 1) {
+  for (let index = 0; index < progressionLength; index += 1) {
     if (index !== pass) {
       question += `${progressions[index]} `;
     } else {
@@ -45,4 +45,4 @@ const gameData = () => {
   return data;
 };
 
-export default () => play(REGULATIONS, gameData);
+export default () => play(regulations, gameData);

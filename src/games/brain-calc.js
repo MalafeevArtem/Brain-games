@@ -1,7 +1,7 @@
 import randomNumber from '../randomNumber';
 import play from '..';
 
-const REGULATIONS = 'What is the result of the expression?';
+const regulations = 'What is the result of the expression?';
 const operator = ['+', '-', '*'];
 
 const valueСalculation = (operand1, operand2, operation) => {
@@ -28,4 +28,4 @@ const gameData = () => {
   return data;
 };
 
-export default () => play(REGULATIONS, gameData);
+export default () => play(regulations, gameData);
