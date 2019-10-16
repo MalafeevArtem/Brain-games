@@ -7,7 +7,7 @@ const isPrime = (operand) => {
   for (let index = 2; index < operand; index += 1) {
     if (operand % index === 0) return false;
   }
-  return operand > 1;
+  return true;
 };
 
 const gameData = () => {

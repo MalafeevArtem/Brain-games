@@ -5,7 +5,6 @@ const regulations = 'What is the result of the expression?';
 const operator = ['+', '-', '*'];
 
 const valueСalculation = (operand1, operand2, operation) => {
-
   switch (operation) {
     case '+':
       return operand1 + operand2;
@@ -14,7 +13,6 @@ const valueСalculation = (operand1, operand2, operation) => {
     default:
       return operand1 * operand2;
   }
-
 };
 
 const gameData = () => {
