@@ -5,27 +5,27 @@ export default (regulations, gameData) => {
   console.log(regulations);
   const askName = readlineSync.question('\nMay I have your name? ');
   console.log(`Hello, ${askName}!\n`);
-  const COUNT = 3;
+  const attemptsCount = 3;
 
   const iteration = (count) => {
-    const data = gameData();
+    const [trueAnswer, question] = gameData();
 
     if (count === 0) {
       console.log(`Congratulations, ${askName}`);
       return;
     }
 
-    console.log(`Question: ${data[1]}`);
+    console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');
 
-    if (playerAnswer === data[0]) {
+    if (playerAnswer === trueAnswer) {
       console.log('Correct!');
       iteration(count - 1);
     } else {
-      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${data[0]}')`);
+      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}')`);
       console.log(`Let's try again, ${askName}`);
     }
   };
 
-  iteration(COUNT);
+  iteration(attemptsCount);
 };

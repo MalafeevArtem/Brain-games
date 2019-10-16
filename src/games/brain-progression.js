@@ -11,7 +11,7 @@ const createProgression = (start, step) => {
     if (count === progressionLength) {
       return progression;
     }
-    prog.push(start + step * count);
+    progression.push(start + step * count);
     return iteration(count + 1);
   };
 
