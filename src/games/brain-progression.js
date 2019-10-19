@@ -1,7 +1,7 @@
 import randomNumber from '../randomNumber';
 import play from '..';
 
-const regulations = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 const progressionLength = 10;
 
 const createProgression = (start, step) => {
@@ -18,31 +18,16 @@ const createProgression = (start, step) => {
   return iteration(0);
 };
 
-const createQuestion = (progressions, pass) => {
-  let question = '';
-
-  for (let index = 0; index < progressionLength; index += 1) {
-    if (index !== pass) {
-      question += `${progressions[index]} `;
-    } else {
-      question += '.. ';
-    }
-  }
-
-  return question;
-};
-
 const gameData = () => {
-  const pass = randomNumber(1, 10);
+  const missingValue = randomNumber(1, progressionLength - 1);
   const step = randomNumber(2, 25);
   const start = randomNumber(2, 11);
   const progressions = createProgression(start, step);
-  const trueAnswer = progressions[pass];
-  const skippingProgression = createQuestion(progressions, pass);
-  const question = `${skippingProgression}`;
+  const trueAnswer = progressions[missingValue];
+  const question = progressions.map((value, index) => (index === missingValue ? '..' : value)).join(' ');
   const data = [String(trueAnswer), question];
 
   return data;
 };
 
-export default () => play(regulations, gameData);
+export default () => play(description, gameData);

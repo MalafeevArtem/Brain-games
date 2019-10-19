@@ -1,7 +1,7 @@
 import randomNumber from '../randomNumber';
 import play from '..';
 
-const regulations = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const gameData = () => {
   const gcd = (operand1, operand2) => {
@@ -21,4 +21,4 @@ const gameData = () => {
   return data;
 };
 
-export default () => play(regulations, gameData);
+export default () => play(description, gameData);
