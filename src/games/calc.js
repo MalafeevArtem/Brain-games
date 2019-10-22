@@ -17,7 +17,7 @@ const valueСalculation = (operand1, operand2, operation) => {
   }
 };
 
-const gameData = () => {
+const getGameData = () => {
   const operand1 = randomNumber(0, 100);
   const operand2 = randomNumber(0, 100);
   const operation = randomNumber(0, operator.length - 1);
@@ -29,4 +29,4 @@ const gameData = () => {
   return data;
 };
 
-export default () => play(description, gameData);
+export default () => play(description, getGameData);

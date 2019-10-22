@@ -1,14 +1,15 @@
 import readlineSync from 'readline-sync';
 
-export default (regulations, gameData) => {
+const attemptsCount = 3;
+
+export default (description, getGameData) => {
   console.log('Welcome to the Brain Games!');
-  console.log(regulations);
+  console.log(description);
   const askName = readlineSync.question('\nMay I have your name? ');
   console.log(`Hello, ${askName}!\n`);
-  const attemptsCount = 3;
 
   const iteration = (count) => {
-    const [trueAnswer, question] = gameData();
+    const [trueAnswer, question] = getGameData();
 
     if (count === 0) {
       console.log(`Congratulations, ${askName}`);
