@@ -1,20 +1,40 @@
-<h1>Brain games</h1>
+# Brain games
 
-<div>
-  <a href="https://codeclimate.com/github/MalafeevArtem/backend-project-lvl1/maintainability"><img                    src="https://api.codeclimate.com/v1/badges/0ca6c658a76e6f721c16/maintainability"  /></a>
-  <a href="https://travis-ci.org/MalafeevArtem/Brain-games"><img
- src="https://travis-ci.org/MalafeevArtem/Brain-games.svg?branch=master" /></a>                        
-</div>
+[![Maintainability](https://api.codeclimate.com/v1/badges/4241cc0fd1ca25ed84bd/maintainability)](https://codeclimate.com/github/MalafeevArtem/Brain-games/maintainability) [![Build Status](https://travis-ci.org/MalafeevArtem/Brain-games.svg?branch=master)](https://travis-ci.org/MalafeevArtem/Brain-games)
 
+## Installation
 
-<div>
-  <h2>Examples</h2>
-  <ol>
-  <li><a href="https://asciinema.org/a/kLthmotz3I91hB9nIdzkcHUNl" target="_blank">Brain Even asciinema</a></li>
-  <li><a href="https://asciinema.org/a/shfCiqH03BPviTeJBitQQPjZT" target="_blank">Brain Calc asciinema</a></li>
-  <li><a href="https://asciinema.org/a/J5To3VNlDwHPVTv7mJwoiR4Nc" target="_blank">Brain GCD asciinema</a></li>
-  <li><a href="https://asciinema.org/a/xzsb6m6zRFnipRRgyRg2cbKoV" target="_blank">Brain Progression asciinema</a></li>
-  <li><a href="https://asciinema.org/a/Psaah0Hc5OEwLCEp2r0RLGJXY" target="_blank">Brain Prime asciinema</a></li>
-  </ol>
-</div>
+All installation steps are performed in the root directory of the project:
 
+1. Install NPM:
+```
+   make install
+```
+2. Publish package locally:
+```
+  make publish
+```
+3. Install the package globally:
+```
+  sudo npm link
+```
+4. Start the game:
+```
+  brain-{name}
+```
+
+## List of games
+
+1. brain-even.
+2. brain-calc.
+3. brain-gcd.
+4. brain-prime
+5. brain-progression.
+
+## Example of installation and launch of the game
+
+1. [Brain Even asciinema](https://asciinema.org/a/kLthmotz3I91hB9nIdzkcHUNl).
+2. [Brain Calc asciinema](https://asciinema.org/a/shfCiqH03BPviTeJBitQQPjZT).
+3. [Brain GCD asciinema](https://asciinema.org/a/J5To3VNlDwHPVTv7mJwoiR4Nc).
+4. [Brain Progression asciinema](https://asciinema.org/a/xzsb6m6zRFnipRRgyRg2cbKoV).
+5. [Brain Prime asciinema](https://asciinema.org/a/Psaah0Hc5OEwLCEp2r0RLGJXY).
