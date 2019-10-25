@@ -4,9 +4,9 @@ import play from '..';
 const description = 'What number is missing in the progression?';
 const progressionLength = 10;
 
-const createProgression = (start, step) => {
+const createProgression = (start, step, length) => {
   const iteration = (count, progression) => {
-    if (count === progressionLength) {
+    if (count === length) {
       return progression;
     }
 
@@ -19,12 +19,12 @@ const createProgression = (start, step) => {
 };
 
 const getGameData = () => {
-  const missingIndex = randomNumber(1, progressionLength - 1);
+  const missingElementIndex = randomNumber(1, progressionLength - 1);
   const step = randomNumber(2, 25);
   const start = randomNumber(2, 11);
-  const progressions = createProgression(start, step);
-  const trueAnswer = progressions[missingIndex];
-  const question = progressions.map((value, index) => (index === missingIndex ? '..' : value)).join(' ');
+  const progression = createProgression(start, step, progressionLength);
+  const trueAnswer = progression[missingElementIndex];
+  const question = progression.map((value, index) => (index === missingElementIndex ? '..' : value)).join(' ');
   const data = [String(trueAnswer), question];
 
   return data;
